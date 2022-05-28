@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "mocha": "^10.0.0",
+    "node-fetch": "^2.6.1"
+  },
+  "name": "nodejs-riot-games-api",
+  "version": "1.0.0",
+  "description": "Node.js Wrapper for Riot Games API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ta9to/nodejs-riot-games-api.git"
+  },
+  "keywords": [
+    "riot"
+  ],
+  "author": "ta9to",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ta9to/nodejs-riot-games-api/issues"
+  },
+  "homepage": "https://github.com/ta9to/nodejs-riot-games-api#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@types/node-fetch": "^2.6.1",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  }
+}
