@@ -9,24 +9,17 @@ type SeasonResponse = [
     Season[],
 ];
 
-/**
- * @method static seasons
- * @method static queues
- * @method static maps
- * @method static gameModes
- * @method static gameTypes
- */
 export class GameConstant {
 
-    static url: string = 'https://static.developer.riotgames.com/docs/lol/%s.json';
+    static url: string = 'https://static.developer.riotgames.com/docs/lol/%s.json'
 
-    static async seasons() { return this._fetch('seasons') }
-    static async queues() { return this._fetch('queues') }
-    static async maps() { return this._fetch('maps') }
-    static async gameModes() { return this._fetch('gameModes') }
-    static async gameTypes() { return this._fetch('gameTypes') }
+    public static async seasons() { return this._fetch('seasons') }
+    public static async queues() { return this._fetch('queues') }
+    public static async maps() { return this._fetch('maps') }
+    public static async gameModes() { return this._fetch('gameModes') }
+    public static async gameTypes() { return this._fetch('gameTypes') }
 
-    static async _fetch(path :string) {
+    private static async _fetch(path :string) {
         const _url = GameConstant.url.replace('%s', path)
         try {
             const response = await fetch(_url, {
